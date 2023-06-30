@@ -1,18 +1,13 @@
-import Avatar from './avatar'
-import Date from './date'
-import CoverImage from './cover-image'
-import PostTitle from './post-title'
-import Categories from './categories'
+import Avatar from "./avatar";
+import Date from "./date";
+import CoverImage from "./cover-image";
+import PostTitle from "./post-title";
+import Categories from "./categories";
 
-export default function PostHeader({
-  title,
-  coverImage,
-  date,
-  author,
-  categories,
-}) {
+export default function PostHeader({ title, coverImage, date, author, categories }) {
   return (
     <>
+      <p>post-header.tsx</p>
       <PostTitle>{title}</PostTitle>
       <div className="hidden md:block md:mb-12">
         <Avatar author={author} />
@@ -30,5 +25,5 @@ export default function PostHeader({
         </div>
       </div>
     </>
-  )
+  );
 }
