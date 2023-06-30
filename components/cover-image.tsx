@@ -24,6 +24,8 @@ export default function CoverImage({ title, coverImage, slug }: Props) {
       })}
     />
   );
+  if (!coverImage?.node.sourceUrl) return;
+
   return (
     <div className="sm:mx-0">
       <p>cover-image.tsx</p>
